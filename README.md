@@ -1,80 +1,47 @@
-# Orion: Your Personal AI Assistant 🚀
+# 🧠 Orion Assistant
 
-Orion is an open-source, multi-agent AI assistant built in Python.
-
-You can interact with Orion using natural language commands. It uses:
-
-✅ Local LLM (via [Ollama](https://ollama.com))  
-✅ File automation  
-✅ Browser automation (via Playwright)  
-✅ Modular agent architecture → easy to extend
+**Orion** is a desktop-based intelligent voice and text assistant, inspired by Iron Man's JARVIS. It can understand natural language commands, automate everyday tasks like sending emails, opening files, performing web searches, scheduling reminders, translating text, and more — all powered by local LLMs (like Ollama).
 
 ---
 
-## 🗺️ Current Capabilities
+## 🚀 Features
 
-✅ Understand your command using LLM → converts to steps  
-✅ Open local files anywhere on your PC  
-✅ Open websites automatically  
-✅ Perform search queries on Google and YouTube  
-✅ Extensible architecture → you can add more agents easily
-
----
-
-## 💻 How it works
-
-
-Example flow:
-
-👉 "Go to Google.com and search AI jobs" → Orion opens browser, types query  
-👉 "Open RomilImtiaz ACCV.pdf" → Orion finds file and opens it
+- 🎤 **Voice command support** via microphone (click-to-speak)
+- 💬 **Natural language input** using powerful LLM planning
+- 📂 Open files by name from any folder
+- 📧 Compose and send professional emails using AI
+- 🌐 Perform smart Google searches
+- 🌍 Translate phrases into multiple languages
+- 📅 Schedule calendar events and reminders
+- 🧠 Memory module (remembers contacts, tasks)
+- 🖥️ Jarvis-style GUI built with `tkinter`
+- 🧩 Modular agent design: add your own skills easily!
 
 ---
 
-## 🏗️ Project Structure
 
+## 🛠️ Tech Stack
+
+- `Python 3.10+`
+- `Tkinter` for desktop UI
+- `speech_recognition` for voice input
+- `Ollama` with `llama3` / `codellama` for command planning
+- `SerpAPI` for Google search results
+- `smtplib` + `imaplib` for email read/write
+- `googletrans` for translation
+- `ics` for calendar integration
 
 ---
 
-## 🛠️ Installation
-
-1️⃣ Clone this repo:
+## 📦 Installation
 
 ```bash
-git clone project url
-cd orion_project
-2️⃣ Create conda environment:
-conda create -n orion python=3.11
+git clone https://github.com/yourusername/orion-assistant.git
+cd orion-assistant
+
+# Create and activate virtual environment
+conda create -n orion python=3.10
 conda activate orion
-3️⃣ Install requirements:
-ollama pull llama3:8b
-ollama serve
-4️⃣ Install Ollama:
 
-👉 https://ollama.com/download
-👉 Pull model:
-ollama pull llama3:8b
-ollama serve
-🚀 Usage
-python main.py
-🏗️ Roadmap (Planned)
-✅ FileAgent → open files
-✅ BrowserAgent → open websites + search
-⬜️ BrowserAgent advanced → click buttons, type forms
-⬜️ EmailAgent → read/send emails
-⬜️ CalendarAgent → manage calendar
-⬜️ VoiceAgent → speech input/output
-⬜️ MemoryAgent → store preferences, task history
-⬜️ GUI → build user-friendly interface
-
-🤝 Contributing
-Feel free to fork the project and submit PRs!
-This is an open personal learning project — contributions welcome.
-
-Credits
-Ollama — local LLM runtime
-
-Playwright — browser automation
-
-Python ❤️
-
+# Install dependencies
+pip install -r requirements.txt
