@@ -1,0 +1,8 @@
+requests
+playwright
+deep-translator
+ics
+PyQt6
+SpeechRecognition
+pyaudio
+ollama
