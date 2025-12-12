@@ -2,7 +2,7 @@
 
 # 🧠 Orion Assistant
 
-![Orion bot preview](assets/bot_preview.png)
+![Orion bot preview](utils/assets/bot_preview.png)
 
 A local-first desktop AI assistant that can plan tasks, browse, search, email, translate, schedule, keep notes, and control your machine — powered by Ollama.
 
